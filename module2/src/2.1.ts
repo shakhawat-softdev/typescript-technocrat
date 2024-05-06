@@ -25,11 +25,12 @@
 
   ]
 
+  //Generic Tuple Example
 
   type GenericTuple<X, Y> = [X, Y]
 
-  //Generic Tuple
-  const Manush: [string, string] = ['Mr. X', 'Mr Y']
+  const Manush: GenericTuple<string, string> = ['Mr. X', 'Mr. Y'];
+  const userWithId: GenericTuple<number, { name: string, email: string }> = [1502910201055, { name: 'Persian', email: 'abc@gmail.com' }]
 
 
 

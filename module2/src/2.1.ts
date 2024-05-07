@@ -10,8 +10,6 @@
   // const boolArray: boolean[] = [true, false, true];
   const boolArray: GeniricArray<boolean> = [true, false, true];
 
-
-
   const user: GeniricArray<{ name: string, age: number }> = [
     {
       name: 'Mezba',
@@ -24,11 +22,13 @@
 
   ]
 
+  //Generic Tuple Example
 
   type GenericTuple<X, Y> = [X, Y]
 
-  //Generic Tuple
-  const Manush: [string, string] = ['Mr. X', 'Mr Y']
+  const Manush: GenericTuple<string, string> = ['Mr. X', 'Mr. Y'];
+  const userWithId: GenericTuple<number, { name: string, email: string }> = [1502910201055, { name: 'Persian', email: 'abc@gmail.com' }]
+
 
 
 
